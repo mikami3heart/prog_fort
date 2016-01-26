@@ -23,6 +23,8 @@ real*8 d
 d=real(n)
 do i=1,n
 c(i)=a(i)+b(i)*d
+c(i)=a(i)*c(i) + b(i)*c(i)
+c(i)=sqrt(c(i)**2.0 + 1.0)
 end do
 return
 end
