@@ -1,3 +1,17 @@
+
+subroutine sub_count(a,b,c,n)
+integer :: n
+real*8 a(n), b(n), c(n)
+do i=1,n
+c(i)=0.1/(a(i)+b(i))
+end do
+do i=1,n
+c(i)=c(i)+a(i)*b(i)
+end do
+return
+end
+
+
 program main
 integer,parameter :: n=16384
 integer :: loops
@@ -40,18 +54,5 @@ deallocate (b)
 deallocate (c)
 
 stop
-end
-
-
-subroutine sub_count(a,b,c,n)
-integer :: n
-real*8 a(n), b(n), c(n)
-do i=1,n
-c(i)=0.1/(a(i)+b(i))
-end do
-do i=1,n
-c(i)=c(i)+a(i)*b(i)
-end do
-return
 end
 
