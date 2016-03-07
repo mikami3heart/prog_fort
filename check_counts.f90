@@ -12,6 +12,16 @@ return
 end
 
 
+subroutine sub_ext(a,b,c,n)
+integer :: n
+real*8 a(n), b(n), c(n)
+do i=1,n
+c(i)=log(exp( a(i)*b(i) ))
+end do
+return
+end
+
+
 subroutine sub_icount(ia,ib,ic,n)
 integer :: n
 integer ia(n), ib(n), ic(n)
@@ -44,6 +54,7 @@ end do
 do j=1,loops
 call sub_fcount(a,b,c,n)
 call sub_icount(ia,ib,ic,n)
+call sub_ext(a,b,c,n)
 end do
 write(6,'(a,3f8.3)') "<sub_fcount> flop    add:2n, mult:n, div:n each per loop"
 write(6,'(a,3f8.3)') "<sub_icount> integer add:n  each per loop"
