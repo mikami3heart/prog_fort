@@ -8,4 +8,4 @@ http://togetsu.aics10.riken.jp:18080/flops/tasks/
 This repository contains the followings.
 
 - check_counts.f90	: fortran source program
-- flops-task-json.zip	: zipped json file that analyzed the source
+- flops-api-output.json	: analyzed json file from togetsu
