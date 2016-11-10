@@ -1,4 +1,3 @@
-
 subroutine sub_fcount(a,b,c,n)
 integer :: n
 real*8 a(n), b(n), c(n)
@@ -7,13 +6,10 @@ a123=a(1)+a(2)+a(3)
 b123=b(1)+b(2)+b(3)
 
 do i=1,n-1
-c(i)=0.1/(a(i)+b(i))
-end do
-do i=1,n-2
-c(i)=c(i)+a(i)*b(i)
+c(i)=0.1*(a(i)+b(i))
 end do
 
-c(n)=c(n)+a123+b123
+c(n)=c(n-1)+a123+b123
 return
 end
 
