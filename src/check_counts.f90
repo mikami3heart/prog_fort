@@ -20,6 +20,7 @@ real*8 a(n), b(n), c(n)
 do i=1,n
 c(i)=log(exp( a(i)*b(i) ))
 end do
+call sub_sub_ext(c)
 return
 end
 
@@ -68,3 +69,9 @@ deallocate (c)
 stop
 end
 
+
+
+subroutine sub_sub_ext(c)
+real*8 a(*)
+return
+end
