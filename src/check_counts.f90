@@ -72,6 +72,6 @@ end
 
 
 subroutine sub_sub_ext(c)
-real*8 a(*)
+real*8 c(*)
 return
 end
