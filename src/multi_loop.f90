@@ -16,4 +16,3 @@ c(n)=c(n-1)+a123+b123
 return
 end
 
-
