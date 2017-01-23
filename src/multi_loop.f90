@@ -10,6 +10,7 @@ do i=1,n-1
 	do j=i,n-1
 		c(j)= c(j) + (a(j)*a(i)+b(j)*b(i))
 	end do
+	c(i)=0.2*(a(i)-b(i))
 	do j=1,i
 		c(j)= c(j) - (a(j)*a(i)-b(j)*b(i))
 	end do
