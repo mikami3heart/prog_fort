@@ -2,6 +2,10 @@
 FLOPS API is now hosted as docker container.
 See ccaEBT.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 55e1cdef571851af9f36921e60509e70bdc9cb04
 # prog_fort
 collection of Fortran programs for FLOPS API.
 
