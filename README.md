@@ -1,4 +1,5 @@
 # Note
+This is an obsolete repository.
 FLOPS API is now hosted as docker container.
 See ccaEBT.
 
